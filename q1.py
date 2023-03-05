@@ -1,13 +1,8 @@
-count = 0 
-l1 = []
+
+v2 = 3
 while True:
   x = int(input('Enter a number: '))
-  if x % 2 == 0:
-    flag = x
-    l1.append(flag)
-    count = count + 1
-  if count == 2:
+  if x % 2 == 0 and v2 % 2 == 0:
+    print(v2,x,end=' ')
     break
-
-for i in l1:
-  print(i,end=' ')
+  v2 = x
